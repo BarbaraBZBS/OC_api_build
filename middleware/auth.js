@@ -8,6 +8,7 @@ module.exports = (req, res, next) => {
        req.auth = {
            userId: userId
        };
+       console.log('userId', userId)
 	next();
    } 
    catch(error) {
